@@ -38,9 +38,9 @@ public class BadHabit : Habit
         }
         displayText += "\n";
 
-        //Console.WriteLine(displayText);
+        Console.WriteLine(displayText);
 
-        //string userInput = Console.ReadLine();
+        string userInput = Console.ReadLine();
     }
     public override string GetRepresentationText()
     {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,7 +28,9 @@ namespace Habit_Binder
 
         private void ButtonCreateHabit_Click(object sender, RoutedEventArgs e)
         {
-
+            var CreateGoodHabitWindow = new CreateGoodHabitWindow();
+            CreateGoodHabitWindow.Owner = this;
+            CreateGoodHabitWindow.Show();
         }
 
         private void ButtonDisplayAll_Click(object sender, RoutedEventArgs e)
