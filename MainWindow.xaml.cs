@@ -24,5 +24,30 @@ namespace Habit_Binder
         {
             InitializeComponent();
         }
+
+        private void ButtonCreateHabit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonDisplayAll_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonDisplaySingle_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonDisplayTracker_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonRecordComplete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

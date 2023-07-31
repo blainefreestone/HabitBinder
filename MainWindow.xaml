@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Habit_Binder"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Habit Binder Menu" Height="250" Width="250">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
+        <Label FontSize="25" HorizontalContentAlignment="Center">Habit Binder Menu</Label>
+
+        <StackPanel Grid.Row="1" Margin="5,0,0,0">
+            <Button x:Name="btnCreateHabit" Click="ButtonCreateHabit_Click" Margin="0,10,5,0">Create New Habit</Button>
+            <Button x:Name="btnDisplayAll" Click="ButtonDisplayAll_Click" Margin="0,10,5,0">Display All Habits</Button>
+            <Button x:Name="btnDisplaySingle" Click="ButtonDisplaySingle_Click" Margin="0,10,5,0">Display Single Habit</Button>
+            <Button x:Name="btnDisplayTracker" Click="ButtonDisplayTracker_Click" Margin="0,10,5,0">Display Habit Tracker</Button>
+            <Button x:Name="btnRecordComplete" Click="ButtonRecordComplete_Click" Margin="0,10,5,0">Record Habit Completion for Today</Button>
+            
+        </StackPanel>
     </Grid>
+    
 </Window>
