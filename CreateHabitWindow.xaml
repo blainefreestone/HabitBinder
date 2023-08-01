@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Habit_Binder"
         mc:Ignorable="d"
-        Title="CreateHabitWindow" Height="450" Width="800">
+        Title="CreateHabitWindow" Height="Auto" Width="800">
     <Grid>
-        
+        <StackPanel>
+            <Label FontSize="40" HorizontalAlignment="Center">Create New Habit</Label>
+            <ComboBox HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="300" FontSize="18" x:Name="cmbHabitType">
+                <ComboBoxItem IsSelected="True" x:Name="cmbitemDefault">Choose Habit Type</ComboBoxItem>
+                <ComboBoxItem x:Name="cmbitemGoodHabit">Good Habit</ComboBoxItem>
+                <ComboBoxItem x:Name="cmbitemBadHabit">Bad Habit</ComboBoxItem>
+            </ComboBox>
+            <TextBlock FontSize="18" Margin="10,28,0,0" x:Name="txtName"> What is the name of this habit?</TextBlock>
+            <TextBox Margin="10,5,500,0" Height="25"></TextBox>
+            <TextBlock FontSize="18" Margin="10,28,0,0">Briefly, how would you describe the identity behind this habit?</TextBlock>
+            <TextBox Margin="10,5,10,0" Height="40" x:Name="txtIdentityDescription"></TextBox>
+            <TextBlock FontSize="18" Margin="10,28,0,0">How would you put this identity in one word?</TextBlock>
+            <TextBox Margin="10,5,600,0" Height="25" x:Name="txtIdentityDescriptor"></TextBox>
+            <Button x:Name="btnNext" Margin="25,25,25,25" FontSize="18" Click="ButtonNext_Click">Next</Button>
+            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,25" Foreground="Red" FontSize="18" Visibility="Collapsed" x:Name="txtNotCompleteFlag">* Please fill in all information before continuing.</TextBlock>
+        </StackPanel>
     </Grid>
 </Window>

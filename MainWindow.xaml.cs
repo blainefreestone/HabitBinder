@@ -21,6 +21,13 @@ namespace Habit_Binder
     /// </summary>
     public partial class MainWindow : Window
     {
+        private List<Habit> _habits = new List<Habit>();
+        public void CreateNewHabit()
+        {
+            CreateHabitWindow createHabitWindow = new CreateHabitWindow();
+            createHabitWindow.Owner = this;
+            createHabitWindow.Show();
+        }
         public MainWindow()
         {
             InitializeComponent();
@@ -28,9 +35,10 @@ namespace Habit_Binder
 
         private void ButtonCreateHabit_Click(object sender, RoutedEventArgs e)
         {
-            var CreateGoodHabitWindow = new CreateGoodHabitWindow();
-            CreateGoodHabitWindow.Owner = this;
-            CreateGoodHabitWindow.Show();
+            CreateNewHabit();
+            //var CreateGoodHabitWindow = new CreateGoodHabitWindow();
+            //CreateGoodHabitWindow.Owner = this;
+            //CreateGoodHabitWindow.Show();
         }
 
         private void ButtonDisplayAll_Click(object sender, RoutedEventArgs e)
